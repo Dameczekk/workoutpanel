@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="assets/img/pics/mainIcon.png" type="image/x-icon">
+  <link rel="stylesheet" href="src/css/animations.css">
+  <link rel="stylesheet" href="src/css/loading.css">
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/responsive.css">
+  <title>app</title>
+</head>
+<body>
+  <div class="start">
+    <img src="assets/img/pics/workoutpanel.png" alt="start logo">
+    <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+  </div>
+  <div class="modals">
+    <div class="modal0 hidden">
+      <div id="modalContainer0">
+        <h1>Settings</h1>
+        <div class="dialog">
+          <button id="cancel0" class="cancel">cancel</button>
+          <button id="confirm0" class="confirm">save</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal1 hidden">
+      <div id="modalContainer1">
+        <h1>Add product to list</h1>
+        <h2>Please provide nutritional values ​​in 100 grams</h2>
+        <input id="name_input0" placeholder="name" type="text">
+        <input id="protein_input0" placeholder="protein per 100g" type="number">
+        <input id="carbohydrates_input0" placeholder="carbohydrates per 100g" type="number">
+        <input id="fats_input0" placeholder="fats per 100g" type="number">
+        <input id="weightProduct_input0" placeholder="Product weight" type="number">
+        <select name="Type" id="type_input0">
+          <option value="liquid">liquid</option>
+          <option value="breakfast">breakfast</option>
+          <option value="lunch">lunch</option>
+          <option value="dinner">dinner</option>
+          <option value="snack">snack</option>
+          <option value="fastfood">fastfood</option>
+        </select>
+        <div class="dialog">
+          <button id="cancel1" class="cancel">cancel</button>
+          <button id="confirm1" class="confirm">add</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal2 hidden">
+      <div id="modalContainer2">
+        <h1>Log in</h1>
+        <img class="logo" src="assets/img/pics/workoutpanelwhite.png" alt="panel logo">
+        <img class="manprofile" src="assets/img/pics/manflexingbiceps.png" alt="Man profile pic">
+        <input placeholder="Login" type="text" id="full_name_input">
+        <input placeholder="Password" type="password" id="password_input1">
+        <button id="login_Button">Log in</button>
+        <span id="alert0" class="alert hidden"></span>
+        <span>Don't have account?</span>
+        <button id="signup_Button">Sign up</button>
+        <div class="lds-dual-ring hidden"></div>
+      </div>
+    </div>
+    <div class="modal3 hidden">
+      <div id="modalContainer3">
+        <h1>Sign up</h1>
+        <img class="manprofile" src="assets/img/pics/manflexingbody.png" alt="Man profile pic">
+        <input placeholder="Name" type="text" id="name_input1">
+        <input placeholder="Lastname" type="text" id="lastname_input0">
+        <input placeholder="Password" type="password" id="password_input0">
+        <input placeholder="Confirm password" type="password" id="confirmPassword_input0">
+        <select name="Gender" id="genderInput">
+          <option value="man">man</option>
+          <option value="woman">woman</option>
+        </select>
+        <input id="date_input0" type="date">
+        <div class="elements">
+          <button class="cancel" id="cancel3">cancel</button>
+          <button id="confirm3">sign up</button>
+        </div>
+        <span id="alert1" class="alert hidden"></span>
+      </div>
+    </div>
+    <div class="modal4 hidden">
+      <div id="modalContainer4">
+        <h1>Complete your account setup</h1>
+        <div class="elements">
+          <button id="arrowBack" class="arrow">
+            <img src="assets/img/icons/arrow_back.png" alt="Arrow img">
+          </button>
+          <div id="sliderContainer">
+            <div id="profilePics">
+              <div class="sliderItem"><img src="assets/img/pics/person0.png" alt="Profile 1"></div>
+              <div class="sliderItem"><img src="assets/img/pics/person1.png" alt="Profile 2"></div>
+              <div class="sliderItem"><img src="assets/img/pics/person2.png" alt="Profile 3"></div>
+              <div class="sliderItem"><img src="assets/img/pics/person3.png" alt="Profile 4"></div>
+              <div class="sliderItem"><img src="assets/img/pics/person4.png" alt="Profile 5"></div>
+              <div class="sliderItem"><img src="assets/img/pics/person5.png" alt="Profile 6"></div>
+              <div class="sliderItem"><img src="assets/img/pics/person6.png" alt="Profile 7"></div>
+              <div class="sliderItem"><img src="assets/img/pics/person7.png" alt="Profile 8"></div>
+              <div class="sliderItem"><img src="assets/img/pics/person8.png" alt="Profile 9"></div>
+              <div class="sliderItem"><img src="assets/img/pics/person9.png" alt="Profile 10"></div>
+              <div class="sliderItem"><img src="assets/img/pics/person10.png" alt="Profile 11"></div>
+              <div class="sliderItem"><img src="assets/img/pics/person11.png" alt="Profile 12"></div>
+              <div class="sliderItem"><img src="assets/img/pics/person12.png" alt="Profile 13"></div>
+              <div class="sliderItem"><img src="assets/img/pics/person13.png" alt="Profile 14"></div>
+              <div class="sliderItem"><img src="assets/img/pics/person14.png" alt="Profile 15"></div>
+            </div>
+          </div>
+          <button id="arrowForward" class="arrow">
+            <img src="assets/img/icons/arrow_forward.png" alt="Arrow img">
+          </button>
+        </div>
+        <input placeholder="Your weight" type="number">
+        <input placeholder="Your growth" type="number">
+        <select id="physicalActivityLevel">
+          <option value="sedentary">Sedentary (little physical activity)</option>
+          <option value="low">Low (minimal exercise or sedentary lifestyle)</option>
+          <option value="moderate">Moderate (regular exercise or moderate activity level)</option>
+          <option value="active">Active (regular exercise or active lifestyle)</option>
+          <option value="high">High (intense exercise or high activity level)</option>
+        </select>
+        <div class="dialog">
+          <button id="finishButton" type="sumbit" class="confirm">Finish</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal5 hidden">
+      <div id="modalContainer5">
+        <h1>Do you want to stay logged in?</h1>
+        <div class="dialog">
+          <button class="cancel" id="cancel4">cancel</button>
+          <button class="confirm" id="confirm4">confirm</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal6 hidden">
+      <div id="modalContainer6">
+        <div class="notifications">
+          <template class="notificationPattern">
+            <div class="notification">
+              <h1 class="notificationTitle"></h1>
+              <span class="notificationContent"></span>
+            </div>
+          </template>
+        </div>
+        <div class="dialog">
+          <button class="cancel" id="cancel6">cancel</button>
+          <button class="confirm" id="confirm6">ok</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal7 hidden">
+      <div id="modalContainer7">
+        <div class="modal7settings">
+          <button class="account_setting_Button activeSetting">My account</button>
+          <button class="account_setting_Button">Change datas</button>
+          <button class="account_setting_Button">My datas</button>
+          <button class="account_setting_Button">Delete account</button>
+          <div class="dialog">
+            <button class="cancel" id="cancel7">cancel</button>
+            <button class="confirm" id="confirm7">ok</button>
+          </div>
+        </div>
+        <div class="profileInformations">
+          <img class="profilePicture" src="assets/img/pics/person0.png" alt="Person">
+          <div class="accountDatas">
+            <span class="fullName">Name lastName</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main>
+    <aside class="sideBar">
+      <div id="block0">
+        <button class="active" id="sideBarButton0">
+          <img src="assets/img/icons/dashboard.png" alt="Dashboard icon">
+          <h2>Dashboard</h2>
+        </button>
+        <button id="sideBarButton1">
+          <img src="assets/img/icons/settings.png" alt="Settings icon">
+          <h2>Settings</h2>
+        </button>
+        <button id="sideBarButton2">
+          <img src="assets/img/icons/workout.png" alt="Training plan icon">
+          <h2>Training plan</h2>
+        </button>
+        <button id="sideBarButton3">
+          <img src="assets/img/icons/nutrition.png" alt="Nutrition icon">
+          <h2>Kcal</h2>
+        </button>
+        <button id="sideBarButton4">
+          <img src="assets/img/icons/schedule.png" alt="Sechedule icon">
+          <h2>Schedule</h2>
+        </button>
+        <button id="sideBarButton5">
+          <img src="assets/img/icons/reports.png" alt="Reports icon">
+          <h2>Reports</h2>
+        </button>
+      </div>
+      <div id="block1">
+        <button></button>
+      </div>
+      <div id="block2">
+        <button id="logOut_Button">
+          <img src="assets/img/icons/logout.png" alt="Logout icon">
+          <h2>Log out</h2>
+        </button>
+        <button id="toggleArrow">
+          <img src="assets/img/icons/left.png" alt="Arrow icon">
+        </button>
+      </div>
+    </aside>
+    <section id="section0" class="panel">
+      <header>
+        <div class="searchArea">
+          <img src="assets/img/icons/search.png" alt="Search icon">
+          <input placeholder="search" type="text">
+        </div>
+        <div class="options">
+          <button id="ring_button"><img src="assets/img/icons/notification.png" alt="Ring icon"></button>
+          <button id="update_button"><img src="assets/img/icons/update.png" alt="Update icon"></button>
+          <div class="profile">
+            <img class="profilePicture" src="assets/img/pics/person0.png" alt="Profile picture">
+            <span class="fullName">Name Lastname</span>
+          </div>
+        </div>
+      </header>
+      <div id="welcome">
+        <div class="welcome_text">
+          <h1>Good morning, User</h1>
+          <span>Remember your goals and strive for them</span>
+        </div>
+        <div class="welcome_img">
+          <img src="assets/img/pics/welcomePic.png" alt="welcome pic">
+        </div>
+      </div>
+      <div id="slot0">
+        <div class="module0">
+          <div class="comments">
+            <div>
+              <h1>Weight</h1>
+              <h2>Current weight</h2>
+              <h2>Weight goal</h2>
+            </div>
+            <div>
+              <h1 class="progress">Progress in this mounth</h1>
+            </div>
+          </div>
+          <div class="pictures">
+          </div>
+        </div>
+        <div class="module1">
+          <div class="comments">
+            <div>
+              <h1>Kcal today</h1>
+              <h2>Protein</h2>
+              <h2>Carbohydrates</h2>
+              <h2>Fats</h2>
+            </div>
+            <div>
+              <div class="elements">
+                <label for="protein_stats">P</label>
+                <div class="kcal_stats" id="protein_stats"></div>
+              </div>
+              <div class="elements">
+                <label for="carbohydrates_stats">C</label>
+                <div class="kcal_stats" id="carbohydrates_stats"></div>
+              </div>
+              <div class="elements">
+                <label for="fats_stats">F</label>
+                <div class="kcal_stats" id="fats_stats"></div>
+              </div>
+            </div>
+          </div>
+          <div class="pictures"></div>
+        </div>
+      </div>
+    </section>
+    <section id="section1" class="panel hidden">
+      Your training plan
+    </section>
+    <section id="section2" class="panel hidden">
+    </section>
+    <section id="section3" class="panel hidden">
+      <div class="kcal_widget">
+        <h1>Your kcal today</h1>
+        <div id="kcal_today_bar">
+          <div id="kcal_today_value">0%</div>
+        </div>
+      </div>
+      <div id="macronutrients_widget">
+        <h2>Protein</h2>
+        <div class="nutrition_bar" id="protein_today_bar"><div id="protein_today_value">0%</div></div>
+        <h2>Carbohydrates</h2>
+        <div class="nutrition_bar" id="carbohydrates_today_bar"><div id="carbohydrates_today_value">0%</div></div>
+        <h2>Fats</h2>
+        <div class="nutrition_bar" id="fats_today_bar"><div id="fats_today_value">0%</div></div>
+      </div>
+      <button id="add_product_Button">
+        <img src="assets/img/icons/addBox.png" alt="Add icon">
+        <span>Add product</span>
+      </button>
+      <div id="products_today">
+        <template class="productPattern">
+          <div class="product">
+            <div class="elements">
+              <img src="" alt="Food icon">
+              <span class="name"></span>
+            </div>
+          </div>
+        </template>
+      </div>
+    </section>
+    <section id="section4" class="panel hidden">
+      Sechedule
+    </section>
+    <section id="section5" class="panel hidden">
+      Reports
+    </section>
+  <div class="overlay hidden"></div>
+  <script src="src/js/start.js"></script>
+  <script src="src/js/app.js"></script>
+  <script src="src/js/security.js"></script>
+  <script src="src/js/animations.js"></script>
+  <script src="src/js/datas.js"></script>
+</body>
+</html>
